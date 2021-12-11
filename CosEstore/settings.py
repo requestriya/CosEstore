@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'q7w5=i@g4av7b!03+#xr48kh(weg^ix6v*7765x8gb--d$pon!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'cosmo-estore.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
