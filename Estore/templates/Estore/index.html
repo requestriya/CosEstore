@@ -325,66 +325,18 @@
         </div>
 
       <div class="row">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        {% for products in product %}
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch my-2">
           <div class="card">
-            <img class="card-img-top p-auto" src="/static/assets/img/portfolio/upco (1).jpg" alt="Card image cap">
+            <img class="card-img-top p-auto" src="{{products.imageURL}}" alt="Card image cap">
           <div class="card-body text-center">
-            <h6 class="card-title">Eye Pallete <span> <br>&#8377 670</span></h6>
+            <h6 class="card-title">{{products.name}} <span> <br>&#8377 {{products.price}}</span></h6>
+            <p>{{products.description}}</p>
             <a href="" class="btn btn-light text-center rounded-pill cart"><i class="bi bi-cart" style="font-size:18px"></i> Add to cart</a>
           </div>
           </div>
         </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="card">
-            <img class="card-img-top p-auto" src="/static/assets/img/portfolio/upco (2).jpg" alt="Card image cap">
-          <div class="card-body text-center">
-            <h6 class="card-title">Sunscreen <span> <br>&#8377 670</span></h6>
-            <a href="" class="btn btn-light text-center rounded-pill cart"><i class="bi bi-cart" style="font-size:18px"></i> Add to cart</a>
-          </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-          <div class="card">
-            <img class="card-img-top p-auto" src="/static/assets/img/portfolio/upco (3).jpg" alt="Card image cap">
-          <div class="card-body text-center">
-            <h6 class="card-title">Serum<span> <br>&#8377 670</span></h6>
-            <a href="" class="btn btn-light text-center rounded-pill cart"><i class="bi bi-cart" style="font-size:18px"></i> Add to cart</a>
-          </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="card">
-            <img class="card-img-top p-auto" src="/static/assets/img/portfolio/upco (4).jpg" alt="Card image cap">
-          <div class="card-body text-center">
-            <h6 class="card-title">Foundation <span> <br>&#8377 670</span></h6>
-            <a href="" class="btn btn-light text-center rounded-pill cart"><i class="bi bi-cart" style="font-size:18px"></i> Add to cart</a>
-          </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="card">
-            <img class="card-img-top p-auto" src="/static/assets/img/portfolio/upco (5).jpg" alt="Card image cap">
-          <div class="card-body text-center">
-            <h6 class="card-title">Crème <span> <br>&#8377 670</span></h6>
-            <a href="" class="btn btn-light text-center rounded-pill cart"><i class="bi bi-cart" style="font-size:18px"></i> Add to cart</a>
-          </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="card">
-            <img class="card-img-top p-auto" src="/static/assets/img/portfolio/upco (6).jpg" alt="Card image cap">
-          <div class="card-body text-center">
-            <h6 class="card-title">Loose powder <span> <br>&#8377 670</span></h6>
-            <a href="" class="btn btn-light text-center rounded-pill cart"><i class="bi bi-cart" style="font-size:18px"></i> Add to cart</a>
-          </div>
-          </div>
-        </div>
-
+        {% endfor %}
       </div>
 
     </div>
